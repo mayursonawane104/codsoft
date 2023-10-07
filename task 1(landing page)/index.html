@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts Links For Icon -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="#"><img src="/img/logo.png" alt="" height="45px"></a>
+            <ul class="menu-links">
+                <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+                <li><a href="#">Home</a></li>
+                <li><a href="#card">Products</a></li>
+                <li><a href="#review">Testimonials</a></li>
+
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+            <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="content">
+            <h2>Start Your Day With Fresh Foods</h2>
+            <p>
+                Fast and yummy. Good for your tummy.
+            </p>
+            <button>Order Now</button>
+        </div>
+    </section>
+
+    <script>
+        const header = document.querySelector("header");
+        const hamburgerBtn = document.querySelector("#hamburger-btn");
+        const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+        // Toggle mobile menu on hamburger button click
+        hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+        // Close mobile menu on close button click
+        closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    <!-----card-->
+    <section id="card">
+        <br><br>
+        <h2> <span>P</span>roducts</h2>
+        <div class="card-list">
+            <a href="#" class="card-item">
+                <img src="/img/img-3.jpg" alt="Card Image">
+                <span class="developer">Rs. 30</span>
+                <h3>Sandwich</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="#" class="card-item">
+                <img src="/img/pic1.jpg" alt="Card Image">
+                <span class="designer">Rs. 30</span>
+                <h3>Idli Dosa</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="#" class="card-item">
+                <img src="/img/pic12.jpg" alt="Card Image">
+                <span class="editor">Rs. 30</span>
+                <h3>Dahi Papadi Chaat</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="#" class="card-item">
+                <img src="/img/pic2.jpg" alt="Card Image">
+                <span class="developer">Rs. 30</span>
+                <h3>Samosa</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="#" class="card-item">
+                <img src="/img/pic3.jpg" alt="Card Image">
+                <span class="designer">Rs. 60</span>
+                <h3>Veg hakka Noodles</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="#" class="card-item">
+                <img src="/img/pic4.jpg" alt="Card Image">
+                <span class="editor">Rs. 60</span>
+                <h3>Veg manchurian</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="#" class="card-item">
+                <img src="/img/s1.jpg" alt="Card Image">
+                <span class="developer">Rs. 30</span>
+                <h3>Veg Manchow Soup</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="#" class="card-item">
+                <img src="/img/pic6.jpg" alt="Card Image">
+                <span class="designer">Rs. 30</span>
+                <h3>Chicken Burger with fries</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="#" class="card-item">
+                <img src="/img/pic7.jpg" alt="Card Image">
+                <span class="editor">Rs. 30</span>
+                <h3>Bee Cake and Pastry</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="#" class="card-item">
+                <img src="/img/pic8.jpg" alt="Card Image">
+                <span class="developer">Rs. 60</span>
+                <h3>Pizza</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="#" class="card-item">
+                <img src="/img/img-4.jpg" alt="Card Image">
+                <span class="designer">Rs. 30</span>
+                <h3>Tocos</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="#" class="card-item">
+                <img src="/img/img-5.jpg" alt="Card Image">
+                <span class="editor">Rs. 40</span>
+                <h3>Raspberry Ricotta Toast</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!----review-->
+    <section id="review">
+        <h2> <span>T</span>estimonials</h2>
+        <div class="wrapper">
+            <div class="box">
+                <i class="fas fa-quote-left quote"></i>
+                <p>The food quality and services are top-class. You should try it once.</p>
+                <div class="content">
+                    <div class="info">
+                        <div class="name">hello I am Ganesh</div>
+
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="/img/review/review-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-quote-left quote"></i>
+                <p>I think this is the best pizza restaurant in the entire area.</p>
+                <div class="content">
+                    <div class="info">
+                        <div class="name">hello I am Smita</div>
+
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="/img/review/review-2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-quote-left  quote"></i>
+                <p>Can’t stop myself from visiting this restaurant over again.</p>
+                <div class="content">
+                    <div class="info">
+                        <div class="name">hello I am Kalpesh</div>
+
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="/img/review/review-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------contact-->
+    <section id="contact">
+        <h2> <span>C</span>ontact</h2>
+        <div class="contact">
+            <div class="container">
+                <div class="content">
+                    <div class="left-side">
+                        <div class="address details">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="topic">Address</div>
+                            <div class="text-one">At post Indave Tal : Sakri Dist: Dhule(Maharashtra)</div>
+
+                        </div>
+                        <div class="phone details">
+                            <i class="fas fa-phone-alt"></i>
+                            <div class="topic">Phone</div>
+                            <div class="text-one">+91 1234567890</div>
+
+                        </div>
+                        <div class="email details">
+                            <i class="fas fa-envelope"></i>
+                            <div class="topic">Email</div>
+                            <div class="text-one">Food@gamil.com</div>
+
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="topic-text">Send us a message</div>
+
+                        <form action="#">
+                            <div class="input-box">
+                                <input type="text" placeholder="Enter your name">
+                            </div>
+                            <div class="input-box">
+                                <input type="text" placeholder="Enter your email">
+                            </div>
+                            <div class="input-box message-box">
+
+                                <textarea class="textinput" placeholder="Comment"></textarea>
+
+                            </div>
+                            <div class="button">
+                                <input type="button" value="Send Now">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+        <div class="row copyright">
+            <p>Copyright &copy; 2023 <span>Foodies</span> | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
